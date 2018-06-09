@@ -1,0 +1,72 @@
+<template name="listingpage">
+<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="/images/{{picturemain}}" /></div>
+						  <div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="/images/{{picturemain}}" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{title}}</h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="review-no">41 reviews</span>
+						</div>
+						<p class="product-description">{{description}}</p>
+						<p class="product-category">{{category}}</p>
+						<h4 class="price">current price: <span>${{startprice}}</span></h4>
+						<p class="vote">This item has been viewed<strong> 87 times</strong></p>
+
+						
+						<div class="action">
+							<button class="add-to-cart btn btn-default" type="button">PLACE A BID</button>
+							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+
+							<h4>Listing Location</h4>
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.2531389455903!2d-89.23024619999998!3d48.4516724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d5923dbfe697737%3A0xc9d925c9bc9573fa!2s116+Bruce+St%2C+Thunder+Bay%2C+ON+P7A+5W6!5e0!3m2!1sen!2sca!4v1424272264157" width="550" height="450" frameborder="0" style="border:0"></iframe>
+      
+						
+						</div>
+
+					</div>
+
+				</div>
+				<div class="panel panel-default">
+				<h5>Ask The Seller A Question</h5>
+                <div class="panel-body">                
+                    <form accept-charset="UTF-8" action="" method="POST">
+                        <textarea class="form-control counted" name="message" placeholder="Type in your message" rows="5" style="margin-bottom:10px;"></textarea>
+                        <h6 class="pull-right" id="counter">320 characters remaining</h6>
+                        <button class="btn btn-info" type="submit">Post New Message</button>
+                    </form>
+                </div>
+				
+			</div>
+		</div>
+
+		</div>
+</div>
+	
+</template>

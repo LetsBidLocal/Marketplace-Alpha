@@ -1,0 +1,23 @@
+<template name="homeListings">
+
+  <div class="container">
+    <div id="intro">
+    <h2>Welcome To Let's Bid Local</h2>
+    <p>This site allows you to sign in with Facebook, and bid and buy items from users in your local communities. List items in an auction style listing, or at a fixed amount. Buy items from reputable sellers.</p>
+  </div>
+  <div id="category">
+    <h4>Select categories to search within: </h4>
+
+    <select id="category-select">
+      <option disabled="disabled" selected="selected">Please Select</option>
+      {{#each categories}}
+          <option value="{{this}}">{{this}}</option>
+      {{/each}}
+  </select>
+  </div>
+  {{> listgrid}}
+
+  		</div>
+
+
+</template>
